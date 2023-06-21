@@ -7,6 +7,29 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" th:href="@{/}">Navbar</a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link"
+                       th:href="@{/}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/movie}">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:classappend="${1==1 ? 'active' : ''}" th:href="@{/song}">Songs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <h1>Best Songs</h1>
 <ul>
