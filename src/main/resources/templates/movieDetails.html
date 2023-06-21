@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Best of the year</title>
+</head>
+<body>
+
+<h1>Movie details</h1>
+
+<span>ID del Film:</span><span th:text="${movie.id}"></span>
+<br>
+<span>Titolo del Film:</span><span th:text="${movie.titolo}"></span>
+
+<h2>
+    <a th:href="@{/}">Torna alla home</a>
+</h2>
+
+</body>
+</html>

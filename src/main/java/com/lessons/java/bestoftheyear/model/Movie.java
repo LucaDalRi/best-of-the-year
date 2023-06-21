@@ -1,14 +1,15 @@
-package com.lessons.java.bestoftheyear.Controller;
+package com.lessons.java.bestoftheyear.model;
 
-public class Song {
+public class Movie {
 
     private String titolo;
     private String id;
 
-
-    public Song(String titolo, String id) {
+    public Movie(String titolo, String id) {
         this.titolo = titolo;
         this.id = id;
+
+
     }
 
     public String getTitolo() {
